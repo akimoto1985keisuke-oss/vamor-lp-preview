@@ -1,0 +1,1538 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>VAMOR. 粘膜ケア訴求 記事LP</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@400;500;600;700&family=Noto+Sans+JP:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root {
+  --wine: #8B2252;
+  --wine-dark: #6B1A3F;
+  --wine-light: #A8365E;
+  --wine-bg: #FDF5F8;
+  --wine-bg-deep: #F8ECF0;
+  --ivory: #FAF6F0;
+  --ivory-warm: #F5F0E8;
+  --charcoal: #2D2D2D;
+  --charcoal-light: #4A4A4A;
+  --gray-text: #6B6B6B;
+  --gray-border: #E8E0D4;
+  --gold: #C4956A;
+  --gold-light: #E8C9A0;
+  --blue-soft: #D4E5F0;
+  --blue-accent: #7BACC8;
+  --white: #FFFFFF;
+  --font-serif: 'Noto Serif JP', serif;
+  --font-sans: 'Noto Sans JP', sans-serif;
+}
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+body {
+  font-family: var(--font-sans);
+  color: var(--charcoal);
+  background: var(--ivory);
+  max-width: 420px;
+  margin: 0 auto;
+  -webkit-font-smoothing: antialiased;
+  line-height: 1.8;
+  font-size: 15px;
+  overflow-x: hidden;
+}
+
+/* ===== SECTION 01: HEADLINE ===== */
+.sec-headline {
+  position: relative;
+  background: var(--charcoal);
+  overflow: hidden;
+}
+
+.sec-headline .video-placeholder {
+  width: 100%;
+  height: 240px;
+  background: linear-gradient(135deg, #3a2a1a 0%, #1a1a2a 50%, #2a1a1a 100%);
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+}
+
+.sec-headline .video-placeholder::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background:
+    radial-gradient(ellipse at 30% 60%, rgba(139,34,82,0.15) 0%, transparent 60%),
+    radial-gradient(ellipse at 70% 40%, rgba(196,149,106,0.1) 0%, transparent 50%);
+  animation: shimmer 4s ease-in-out infinite alternate;
+}
+
+@keyframes shimmer {
+  0% { opacity: 0.6; }
+  100% { opacity: 1; }
+}
+
+.sec-headline .video-placeholder .water-effect {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 80px;
+  background: linear-gradient(to top, rgba(139,34,82,0.2), transparent);
+  animation: waterRise 3s ease-in-out infinite;
+}
+
+@keyframes waterRise {
+  0%, 100% { height: 60px; opacity: 0.5; }
+  50% { height: 100px; opacity: 0.8; }
+}
+
+.sec-headline .video-overlay-text {
+  position: relative;
+  z-index: 2;
+  color: rgba(255,255,255,0.85);
+  font-family: var(--font-serif);
+  font-size: 14px;
+  font-weight: 400;
+  letter-spacing: 0.08em;
+  padding: 20px 24px;
+  text-align: center;
+}
+
+.sec-headline .video-badge {
+  position: absolute;
+  top: 16px;
+  left: 16px;
+  background: rgba(255,255,255,0.12);
+  backdrop-filter: blur(8px);
+  border: 1px solid rgba(255,255,255,0.15);
+  border-radius: 4px;
+  padding: 4px 10px;
+  font-size: 10px;
+  color: rgba(255,255,255,0.6);
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  z-index: 3;
+}
+
+.sec-headline .headline-content {
+  background: var(--ivory);
+  padding: 36px 24px 32px;
+}
+
+.hero-visual {
+  margin: 0;
+  background: var(--ivory);
+  border: 1px solid rgba(196, 149, 106, 0.45);
+}
+
+.hero-visual img,
+.hero-visual video {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.hero-video-stage {
+  position: relative;
+  overflow: hidden;
+}
+
+.hero-video-stage video {
+  transform: translateY(-24px);
+  margin-bottom: -24px;
+}
+
+.hero-video-stage .hero-bottom {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  z-index: 1;
+}
+
+.sec-headline h1 {
+  font-family: var(--font-serif);
+  font-size: 22px;
+  font-weight: 600;
+  line-height: 1.7;
+  color: var(--charcoal);
+  margin-bottom: 24px;
+  letter-spacing: 0.02em;
+}
+
+.sec-headline h1 .highlight {
+  background: linear-gradient(transparent 60%, rgba(139,34,82,0.12) 60%);
+}
+
+.sec-headline .lead-text {
+  font-size: 15px;
+  line-height: 2;
+  color: var(--charcoal-light);
+  margin-bottom: 28px;
+}
+
+.checklist {
+  background: var(--ivory-warm);
+  border-radius: 12px;
+  border: 1px solid var(--gray-border);
+  padding: 24px 20px;
+  margin-bottom: 24px;
+}
+
+.checklist .checklist-title {
+  font-family: var(--font-serif);
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--wine);
+  margin-bottom: 16px;
+  letter-spacing: 0.04em;
+}
+
+.checklist-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  padding: 10px 0;
+  border-bottom: 1px solid rgba(232,224,212,0.6);
+  font-size: 14px;
+  line-height: 1.7;
+  color: var(--charcoal-light);
+}
+
+.checklist-item:last-child { border-bottom: none; }
+
+.checklist-item .check-box {
+  flex-shrink: 0;
+  width: 20px;
+  height: 20px;
+  border: 1.5px solid var(--wine-light);
+  border-radius: 4px;
+  margin-top: 2px;
+  position: relative;
+}
+
+.checklist-item .check-box::after {
+  content: '';
+  position: absolute;
+  top: 3px; left: 6px;
+  width: 5px; height: 9px;
+  border: solid var(--wine);
+  border-width: 0 1.5px 1.5px 0;
+  transform: rotate(45deg);
+  opacity: 0.4;
+}
+
+.checklist-image {
+  margin: 0 0 24px;
+}
+
+.checklist-image img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 18px;
+}
+
+.sec-headline .cta-text {
+  font-size: 14px;
+  color: var(--wine);
+  font-weight: 500;
+  line-height: 1.8;
+}
+
+/* ===== SECTION 02: PROBLEM ===== */
+.sec-problem {
+  background: var(--white);
+  padding: 48px 24px;
+}
+
+.section-label {
+  font-size: 10px;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--gray-text);
+  margin-bottom: 12px;
+  font-weight: 500;
+}
+
+.heading-highlight {
+  font-weight: 700;
+  background: linear-gradient(to bottom, transparent calc(100% - 4px), rgba(242, 177, 191, 0.48) 0);
+  -webkit-box-decoration-break: clone;
+  box-decoration-break: clone;
+}
+
+.sec-problem h2 {
+  font-family: var(--font-serif);
+  font-size: 19px;
+  font-weight: 600;
+  line-height: 1.7;
+  color: var(--charcoal);
+  margin-bottom: 20px;
+}
+
+.sec-problem .sub-text {
+  font-size: 15px;
+  line-height: 2;
+  color: var(--charcoal-light);
+  margin-bottom: 36px;
+}
+
+/* Mucous Membrane MAP */
+.mucosa-map {
+  background: transparent;
+  border-radius: 0;
+  padding: 0;
+  margin-bottom: 36px;
+  text-align: center;
+}
+
+.mucosa-map .map-title {
+  font-family: var(--font-serif);
+  font-size: 13px;
+  font-weight: 500;
+  color: var(--wine);
+  letter-spacing: 0.08em;
+  margin-bottom: 20px;
+}
+
+.mucosa-map svg { max-width: 260px; margin: 0 auto; display: block; }
+
+.mucosa-map img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 0;
+}
+
+/* Hormone Graph */
+.hormone-section {
+  margin-top: 36px;
+}
+
+.hormone-section h3 {
+  font-family: var(--font-serif);
+  font-size: 17px;
+  font-weight: 600;
+  line-height: 1.7;
+  color: var(--charcoal);
+  margin-bottom: 16px;
+}
+
+.hormone-section .desc {
+  font-size: 14px;
+  line-height: 1.9;
+  color: var(--charcoal-light);
+  margin-bottom: 28px;
+}
+
+.hormone-graph {
+  background: var(--white);
+  border: 1px solid var(--gray-border);
+  border-radius: 12px;
+  padding: 24px 16px 16px;
+  margin-bottom: 24px;
+}
+
+.hormone-graph .graph-label {
+  font-size: 11px;
+  color: var(--gray-text);
+  letter-spacing: 0.06em;
+  margin-bottom: 8px;
+  text-align: center;
+}
+
+.hormone-graph svg { width: 100%; height: auto; }
+
+.hormone-graph img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.hormone-graph .graph-note {
+  font-size: 11px;
+  color: var(--gray-text);
+  margin-top: 12px;
+  text-align: right;
+}
+
+.problem-closing {
+  font-size: 15px;
+  line-height: 2;
+  color: var(--charcoal-light);
+  margin-top: 28px;
+  padding: 20px;
+  background: var(--ivory-warm);
+  border-radius: 10px;
+  border-left: 3px solid var(--gold);
+}
+
+/* ===== SECTION 03: AGITATION ===== */
+.sec-agitation {
+  background: var(--ivory);
+  padding: 48px 24px;
+}
+
+.sec-agitation h2 {
+  font-family: var(--font-serif);
+  font-size: 19px;
+  font-weight: 600;
+  line-height: 1.7;
+  color: var(--charcoal);
+  margin-bottom: 20px;
+}
+
+.sec-agitation .body-text {
+  font-size: 15px;
+  line-height: 2;
+  color: var(--charcoal-light);
+  margin-bottom: 28px;
+}
+
+.skin-diagram {
+  background: var(--white);
+  border-radius: 0;
+  border: none;
+  padding: 0;
+  margin-bottom: 32px;
+  margin-left: -24px;
+  margin-right: -24px;
+  text-align: center;
+}
+
+.skin-diagram .diagram-title {
+  font-family: var(--font-serif);
+  font-size: 13px;
+  color: var(--wine);
+  letter-spacing: 0.06em;
+  margin-bottom: 16px;
+  font-weight: 500;
+}
+
+.skin-diagram svg { width: 100%; max-width: 340px; height: auto; }
+
+.skin-diagram img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 0;
+}
+
+.accent-box {
+  background: var(--wine-bg);
+  border-left: 4px solid var(--wine);
+  border-radius: 0 10px 10px 0;
+  padding: 20px 20px;
+  margin: 28px 0;
+}
+
+.accent-box h3 {
+  font-family: var(--font-serif);
+  font-size: 16px;
+  font-weight: 600;
+  color: var(--wine-dark);
+  line-height: 1.6;
+  margin-bottom: 12px;
+}
+
+.accent-box p {
+  font-size: 14px;
+  line-height: 1.9;
+  color: var(--charcoal-light);
+}
+
+/* ===== SECTION 04: SOLUTION ===== */
+.sec-solution {
+  background: var(--white);
+  padding: 48px 24px;
+}
+
+.sec-solution h2 {
+  font-family: var(--font-serif);
+  font-size: 19px;
+  font-weight: 600;
+  line-height: 1.7;
+  color: var(--charcoal);
+  margin-bottom: 20px;
+}
+
+.sec-solution .body-text {
+  font-size: 15px;
+  line-height: 2;
+  color: var(--charcoal-light);
+  margin-bottom: 28px;
+}
+
+.exosome-diagram {
+  margin-bottom: 32px;
+  text-align: center;
+}
+
+.exosome-diagram .diagram-title {
+  font-family: var(--font-serif);
+  font-size: 13px;
+  color: var(--wine);
+  letter-spacing: 0.06em;
+  margin-bottom: 16px;
+  font-weight: 500;
+}
+
+.exosome-diagram svg { width: 100%; max-width: 350px; height: auto; }
+
+.exosome-diagram video {
+  display: block;
+  width: 100%;
+  height: auto;
+  max-width: 100%;
+  margin: 0 auto;
+  object-fit: contain;
+}
+
+/* Product video placeholder */
+.product-video {
+  position: relative;
+  width: 100%;
+  height: auto;
+  background: #160812;
+  border-radius: 16px;
+  overflow: hidden;
+  margin-bottom: 32px;
+}
+
+.product-video::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(ellipse at 50% 50%, rgba(139,34,82,0.2) 0%, transparent 70%);
+}
+
+.product-video .play-btn {
+  width: 56px; height: 56px;
+  border: 2px solid rgba(255,255,255,0.4);
+  border-radius: 50%;
+  display: flex; align-items: center; justify-content: center;
+  z-index: 2;
+  position: relative;
+}
+
+.product-video .play-btn::after {
+  content: '';
+  width: 0; height: 0;
+  border-left: 16px solid rgba(255,255,255,0.7);
+  border-top: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+  margin-left: 4px;
+}
+
+.product-video .video-label {
+  position: absolute;
+  bottom: 16px;
+  left: 16px;
+  color: rgba(255,255,255,0.5);
+  font-size: 10px;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  z-index: 2;
+}
+
+.product-video .video-duration {
+  position: absolute;
+  bottom: 16px;
+  right: 16px;
+  color: rgba(255,255,255,0.4);
+  font-size: 10px;
+  z-index: 2;
+}
+
+.product-video video {
+  display: block;
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+  background: #160812;
+}
+
+/* Ingredients */
+.ingredients-title {
+  font-family: var(--font-serif);
+  font-size: 16px;
+  font-weight: 600;
+  color: var(--charcoal);
+  line-height: 1.7;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.ingredients-visual {
+  margin: 0 0 32px;
+}
+
+.ingredients-visual img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.ingredient-card {
+  background: var(--ivory);
+  border-radius: 12px;
+  padding: 20px;
+  margin-bottom: 12px;
+  display: flex;
+  gap: 16px;
+  align-items: flex-start;
+  border: 1px solid rgba(232,224,212,0.5);
+}
+
+.ingredient-icon {
+  flex-shrink: 0;
+  width: 44px;
+  height: 44px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.ingredient-icon.dragon { background: linear-gradient(135deg, #F8D4E0, #EDA5C0); }
+.ingredient-icon.royal { background: linear-gradient(135deg, #F5E6C8, #E8C990); }
+.ingredient-icon.swallow { background: linear-gradient(135deg, #D4E8F0, #A8CDE0); }
+.ingredient-icon.hyaluron { background: linear-gradient(135deg, #D0E8F4, #9CC8E0); }
+.ingredient-icon.collagen { background: linear-gradient(135deg, #E8D4F0, #C8A0D8); }
+
+.ingredient-info h4 {
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--charcoal);
+  margin-bottom: 4px;
+}
+
+.ingredient-info p {
+  font-size: 13px;
+  color: var(--gray-text);
+  line-height: 1.7;
+}
+
+/* Product visual placeholder */
+.product-visual {
+  background: #F6EFE6;
+  border-radius: 16px;
+  height: auto;
+  margin: 16px 0 28px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid var(--gray-border);
+  position: relative;
+  overflow: hidden;
+}
+
+.product-visual-heading {
+  font-family: var(--font-serif);
+  font-size: 17px;
+  font-weight: 600;
+  line-height: 1.7;
+  text-align: center;
+  color: var(--wine-dark);
+  margin: 30px 0 14px;
+}
+
+.product-visual .ph-icon {
+  width: 60px; height: 60px;
+  border: 2px solid var(--gray-border);
+  border-radius: 8px;
+  display: flex; align-items: center; justify-content: center;
+  margin-bottom: 12px;
+}
+
+.product-visual .ph-text {
+  font-size: 12px;
+  color: var(--gray-text);
+  letter-spacing: 0.06em;
+}
+
+.product-visual video {
+  display: block;
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+  background: #F6EFE6;
+}
+
+.product-visual::after {
+  content: '';
+  position: absolute;
+  top: -30px; right: -30px;
+  width: 120px; height: 120px;
+  background: radial-gradient(circle, rgba(139,34,82,0.06) 0%, transparent 70%);
+  border-radius: 50%;
+}
+
+.product-desc {
+  font-size: 15px;
+  line-height: 2;
+  color: var(--charcoal-light);
+  margin-bottom: 32px;
+}
+
+/* CTA Button */
+.cta-block {
+  text-align: center;
+  padding: 8px 0;
+}
+
+.cta-btn {
+  display: block;
+  width: 100%;
+  padding: 18px 24px;
+  background: linear-gradient(135deg, var(--wine) 0%, var(--wine-light) 100%);
+  color: var(--white);
+  font-family: var(--font-serif);
+  font-size: 16px;
+  font-weight: 500;
+  text-decoration: none;
+  border-radius: 14px;
+  letter-spacing: 0.04em;
+  box-shadow: 0 4px 20px rgba(139,34,82,0.2);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  text-align: center;
+}
+
+.cta-btn:active {
+  transform: scale(0.98);
+  box-shadow: 0 2px 10px rgba(139,34,82,0.15);
+}
+
+.cta-sub {
+  font-size: 12px;
+  color: var(--gray-text);
+  margin-top: 12px;
+  letter-spacing: 0.02em;
+}
+
+/* ===== SECTION 05: EVIDENCE ===== */
+.sec-evidence {
+  background: var(--ivory);
+  padding: 48px 24px;
+}
+
+.kpi-row {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 12px;
+  margin-bottom: 36px;
+}
+
+.kpi-card {
+  background: var(--wine-bg);
+  border-radius: 12px;
+  padding: 20px 12px;
+  text-align: center;
+}
+
+.kpi-card .kpi-value {
+  font-family: var(--font-serif);
+  font-size: 18px;
+  font-weight: 700;
+  color: var(--wine);
+  margin-bottom: 4px;
+  line-height: 1.3;
+}
+
+.kpi-card .kpi-label {
+  font-size: 11px;
+  color: var(--gray-text);
+  line-height: 1.4;
+}
+
+.evidence-visual {
+  margin: 0 0 36px;
+}
+
+.evidence-summary {
+  margin: 0 0 18px;
+}
+
+.evidence-summary img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.evidence-visual img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.sec-evidence h2 {
+  font-family: var(--font-serif);
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 1.7;
+  color: var(--charcoal);
+  margin-bottom: 24px;
+}
+
+.sec-evidence .intro-text {
+  font-size: 14px;
+  color: var(--charcoal-light);
+  margin-bottom: 24px;
+  line-height: 1.8;
+}
+
+.review-card {
+  background: var(--white);
+  border-radius: 14px;
+  padding: 24px 20px;
+  margin-bottom: 16px;
+  border: 1px solid rgba(232,224,212,0.6);
+}
+
+.review-card .reviewer-label {
+  display: inline-block;
+  background: var(--wine-bg);
+  color: var(--wine);
+  font-size: 11px;
+  font-weight: 500;
+  padding: 4px 12px;
+  border-radius: 20px;
+  margin-bottom: 12px;
+  letter-spacing: 0.04em;
+}
+
+.review-card .review-text {
+  font-size: 14px;
+  line-height: 1.9;
+  color: var(--charcoal-light);
+}
+
+.reviews-visual {
+  margin: 0 0 10px;
+}
+
+.reviews-visual img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.review-disclaimer {
+  font-size: 11px;
+  color: var(--gray-text);
+  text-align: center;
+  margin-top: 0;
+  margin-bottom: 38px;
+}
+
+/* Lifestyle photo placeholder */
+.lifestyle-photo {
+  width: 100%;
+  aspect-ratio: 4 / 5;
+  background: #F5EFE4;
+  border-radius: 16px;
+  border: 1px solid var(--gray-border);
+  margin-bottom: 28px;
+  position: relative;
+  overflow: hidden;
+}
+
+.lifestyle-photo video {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: top center;
+  background: #F5EFE4;
+}
+
+.lifestyle-photo .ph-icon {
+  font-size: 28px;
+  margin-bottom: 8px;
+  opacity: 0.4;
+}
+
+.lifestyle-photo .ph-text {
+  font-size: 12px;
+  color: var(--gray-text);
+}
+
+.evidence-closing {
+  font-size: 15px;
+  line-height: 2;
+  color: var(--charcoal-light);
+}
+
+/* ===== SECTION 06: OFFER ===== */
+.sec-offer {
+  background: var(--white);
+  padding: 48px 24px;
+}
+
+.sec-offer h2 {
+  font-family: var(--font-serif);
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 1.7;
+  color: var(--charcoal);
+  margin-bottom: 16px;
+}
+
+.sec-offer .offer-intro {
+  font-size: 14px;
+  line-height: 1.9;
+  color: var(--charcoal-light);
+  margin-bottom: 28px;
+}
+
+.offer-visual {
+  margin: 0 0 28px;
+}
+
+.offer-visual img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.price-comparison {
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 28px;
+}
+
+.price-box {
+  background: var(--ivory);
+  border-radius: 12px;
+  padding: 20px 16px;
+  text-align: center;
+}
+
+.price-box.regular .price-label {
+  font-size: 12px;
+  color: var(--gray-text);
+  margin-bottom: 8px;
+}
+
+.price-box.regular .price-value {
+  font-family: var(--font-serif);
+  font-size: 20px;
+  color: var(--gray-text);
+  text-decoration: line-through;
+  text-decoration-color: #C0A0A0;
+}
+
+.price-box.regular .price-detail {
+  font-size: 11px;
+  color: var(--gray-text);
+  margin-top: 6px;
+}
+
+.price-arrow {
+  font-size: 20px;
+  color: var(--wine-light);
+}
+
+.price-box.special {
+  background: var(--wine-bg);
+  border: 2px solid var(--wine);
+  position: relative;
+}
+
+.price-box.special .price-label {
+  font-size: 12px;
+  color: var(--wine);
+  font-weight: 500;
+  margin-bottom: 8px;
+}
+
+.price-box.special .price-value {
+  font-family: var(--font-serif);
+  font-size: 26px;
+  font-weight: 700;
+  color: var(--wine);
+}
+
+.price-box.special .price-tax {
+  font-size: 11px;
+  color: var(--wine-light);
+}
+
+.discount-badges {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  margin-bottom: 8px;
+}
+
+.badge {
+  display: inline-block;
+  padding: 5px 14px;
+  border-radius: 20px;
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+}
+
+.badge.off {
+  background: var(--wine);
+  color: var(--white);
+}
+
+.badge.free {
+  background: var(--wine-bg);
+  color: var(--wine);
+  border: 1px solid var(--wine-light);
+}
+
+.badge.cancel {
+  background: var(--ivory);
+  color: var(--charcoal-light);
+  border: 1px solid var(--gray-border);
+}
+
+.price-note {
+  font-size: 12px;
+  color: var(--gray-text);
+  text-align: center;
+  margin: 16px 0 28px;
+  line-height: 1.7;
+}
+
+/* Unboxing photo placeholder */
+.unbox-photo {
+  width: 100%;
+  height: auto;
+  background: transparent;
+  border-radius: 0;
+  margin-bottom: 28px;
+  position: relative;
+  overflow: hidden;
+}
+
+.unbox-photo img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.quality-section h3 {
+  font-family: var(--font-serif);
+  font-size: 15px;
+  font-weight: 600;
+  color: var(--charcoal);
+  margin-bottom: 16px;
+  line-height: 1.7;
+}
+
+.quality-section p {
+  font-size: 14px;
+  line-height: 1.9;
+  color: var(--charcoal-light);
+  margin-bottom: 28px;
+}
+
+/* ===== SECTION 07: CTA / CLOSING ===== */
+.sec-closing {
+  position: relative;
+  overflow: hidden;
+}
+
+.closing-video {
+  width: 100%;
+  height: auto;
+  background: #F5EFE4;
+  position: relative;
+  overflow: hidden;
+  border: 1px solid var(--gray-border);
+  border-radius: 16px;
+  margin-bottom: 28px;
+}
+
+.closing-video video {
+  display: block;
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+  background: #F5EFE4;
+}
+
+.closing-content {
+  background: linear-gradient(180deg, var(--ivory) 0%, var(--wine-bg) 100%);
+  padding: 36px 24px 32px;
+}
+
+.closing-content h2 {
+  font-family: var(--font-serif);
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 1.7;
+  color: var(--charcoal);
+  margin-bottom: 20px;
+}
+
+.closing-content .body-text {
+  font-size: 15px;
+  line-height: 2;
+  color: var(--charcoal-light);
+  margin-bottom: 28px;
+}
+
+.closing-content .body-text .em {
+  color: var(--wine);
+  font-weight: 500;
+}
+
+.final-cta {
+  background: var(--white);
+}
+
+.final-cta .cta-btn-final {
+  display: block;
+  width: 100%;
+  transition: transform 0.2s ease;
+}
+
+.final-cta .cta-btn-final img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.final-cta .cta-btn-final:active { transform: scale(0.98); }
+
+/* FAQ */
+.sec-faq {
+  background: #F5F3EF;
+  padding: 40px 24px 48px;
+}
+
+.sec-faq h3 {
+  font-family: var(--font-serif);
+  font-size: 16px;
+  font-weight: 600;
+  color: var(--charcoal);
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.faq-item {
+  background: var(--white);
+  border-radius: 12px;
+  margin-bottom: 10px;
+  overflow: hidden;
+  border: 1px solid rgba(232,224,212,0.5);
+}
+
+.faq-item summary {
+  padding: 16px 20px;
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--charcoal);
+  cursor: pointer;
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.faq-item summary::-webkit-details-marker { display: none; }
+
+.faq-item summary::after {
+  content: '+';
+  font-size: 18px;
+  color: var(--wine-light);
+  font-weight: 300;
+  flex-shrink: 0;
+  margin-left: 12px;
+  transition: transform 0.2s ease;
+}
+
+.faq-item[open] summary::after {
+  transform: rotate(45deg);
+}
+
+.faq-item .faq-answer {
+  padding: 0 20px 16px;
+  font-size: 13px;
+  line-height: 1.8;
+  color: var(--charcoal-light);
+}
+
+/* Bottom CTA bar */
+.sec-bottom-cta {
+  background: var(--white);
+  padding: 24px 24px 32px;
+  text-align: center;
+  border-top: 1px solid var(--gray-border);
+}
+
+/* Floating CTA */
+.floating-cta {
+  position: fixed;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+  max-width: 420px;
+  z-index: 100;
+  display: none;
+}
+
+.floating-cta .cta-btn-float {
+  display: block;
+  width: 100%;
+}
+
+.floating-cta .cta-btn-float img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+/* Section dividers */
+.divider {
+  height: 1px;
+  background: linear-gradient(to right, transparent, var(--gray-border), transparent);
+  margin: 0;
+}
+
+.divider-dot {
+  text-align: center;
+  padding: 12px 0;
+  color: var(--gray-border);
+  font-size: 20px;
+  letter-spacing: 12px;
+}
+</style>
+</head>
+<body>
+
+<!-- ============================== -->
+<!-- SECTION 01: HEADLINE           -->
+<!-- ============================== -->
+<section class="sec-headline">
+  <figure class="hero-visual">
+    <img src="assets/uploads/hero-top.png" alt="その全身の渇き、ちゃんとケアできていますか？">
+    <div class="hero-video-stage">
+      <video autoplay muted loop playsinline preload="metadata" aria-label="VAMORファーストビュー動画">
+        <source src="assets/uploads/hero-movie.mp4" type="video/mp4">
+      </video>
+      <img class="hero-bottom" src="assets/uploads/hero-bottom.png" alt="その渇き、肌だけじゃないかもしれません。">
+    </div>
+  </figure>
+
+  <div class="headline-content">
+    <p class="lead-text">
+      毎日化粧水をつけて、美容液を重ねて、それでも追いつかない感覚——あなたにも、ありませんか？<br><br>
+      肌だけじゃない。朝起きたときの口の渇き、夕方になると気になる目のゴロゴロ感、そしてデリケートゾーンの違和感。若い頃にはなかったことが、40代を境に一気に押し寄せてくる。
+    </p>
+
+    <figure class="checklist-image">
+      <img src="assets/uploads/checklist.png" alt="次のうち、いくつ当てはまりますか？ 朝起きると口の中がカラカラに渇いている、目がゴロゴロしたり充血しやすくなった、デリケートゾーンの乾燥や違和感が気になり始めたなどのチェックリスト">
+    </figure>
+
+    <p class="cta-text">
+      3つ以上当てはまったなら、この先を読んでみてください。あなたが長年感じてきた「なんとなく追いつかない感覚」の正体が、わかるかもしれません。
+    </p>
+  </div>
+</section>
+
+<!-- ============================== -->
+<!-- SECTION 02: PROBLEM            -->
+<!-- ============================== -->
+<section class="sec-problem">
+  <div class="section-label">Problem</div>
+  <h2>「ちゃんとケアしてるのに、なんで？」——<br><span class="heading-highlight">40代から急に増える "乾燥の種類"</span></h2>
+  <p class="sub-text">
+    スキンケアをさぼっているわけじゃない。むしろ、年齢を重ねるにつれてケアを増やしてきた。それなのに、なんだか追いつかない感覚——そこには、理由があります。
+  </p>
+
+  <!-- Concern visual -->
+  <div class="mucosa-map">
+    <img src="assets/uploads/concerns-map.png" alt="目の乾き、口臭、肌の乾燥、デリケートゾーンの悩みを表したイメージ">
+  </div>
+
+  <!-- Hormone section -->
+  <div class="hormone-section">
+    <h3><span class="heading-highlight">40代で女性ホルモンが急激に低下すると、何が起きるのか</span></h3>
+    <p class="desc">
+      40代を境に、女性ホルモンは急激に低下します。その影響は、肌だけにとどまりません。目・口・デリケートゾーンなど、全身の「粘膜」の潤いを維持する機能も、ホルモンバランスの変化とともに低下していく。
+    </p>
+
+    <!-- Hormone Graph -->
+    <div class="hormone-graph">
+      <img src="assets/uploads/hormone-graph.png" alt="女性ホルモン（エストロゲン）の変化。更年期以降に急激に低下するイメージ">
+    </div>
+  </div>
+
+  <div class="problem-closing">
+    一つひとつの不調をバラバラに対処しても変わらなかったのは、あなたのケアが足りなかったからではありません。ただ、根っこへのアプローチが、まだできていなかっただけなんです。
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<!-- ============================== -->
+<!-- SECTION 03: AGITATION          -->
+<!-- ============================== -->
+<section class="sec-agitation">
+  <div class="section-label">Agitation</div>
+  <h2>「粘膜に美容液は届かない」——<br><span class="heading-highlight">外側ケアだけでは埋められない理由</span></h2>
+  <p class="body-text">
+    これまでのスキンケアは、間違っていませんでした。ただ、一つだけ足りていないことがあります。
+  </p>
+
+  <!-- Skin cross-section diagram -->
+  <div class="skin-diagram">
+    <img src="assets/uploads/skin-penetration.png" alt="皮膚断面と浸透範囲。外側ケアは表皮まで浸透し、粘膜層には届かないことを示す図">
+  </div>
+
+  <div class="accent-box">
+    <h3>「水もサプリも試した」——<br>変わらなかったのは"届け方"の問題だった</h3>
+    <p>
+      問題は、「何を摂るか」だけではなく、「どんな形で、どう届けるか」でもあったんです。では、粘膜まで届く内側ケアとは何か——次に、その答えをお伝えします。
+    </p>
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<!-- ============================== -->
+<!-- SECTION 04: SOLUTION           -->
+<!-- ============================== -->
+<section class="sec-solution">
+  <div class="section-label">Solution</div>
+  <h2>粘膜ケアの新常識——<br><span class="heading-highlight">「食べるエクソソーム」という選択肢</span></h2>
+  <p class="body-text">
+    近年、美容と医療の分野で注目されている成分があります。それが「エクソソーム」です。細胞が分泌する極小のカプセルのようなもので、別の細胞に情報を届ける、細胞間のメッセンジャーです。
+  </p>
+
+  <!-- Exosome mechanism diagram -->
+  <div class="exosome-diagram">
+    <video autoplay muted loop playsinline preload="metadata" aria-label="エクソソームが細胞間で情報を届けるイメージ動画">
+      <source src="assets/uploads/exosome-message.webm" type="video/webm">
+    </video>
+  </div>
+
+  <p class="body-text">
+    このエクソソームが特に豊富に含まれているのが、鮮やかな赤色のレッドドラゴンフルーツ。わずか1mLの中に300億個ものエクソソーム粒子が含まれています。<br><br>
+    これを内側から毎日摂ることができたら——そのコンセプトを形にしたのが、<strong>VAMOR. Moisten Exosome</strong> です。
+  </p>
+
+  <!-- Product video placeholder -->
+  <div class="product-video">
+    <video autoplay muted loop playsinline preload="metadata" aria-label="VAMOR商品の紹介動画">
+      <source src="assets/uploads/product-movie.mp4" type="video/mp4">
+    </video>
+  </div>
+
+  <!-- Ingredients -->
+  <div class="ingredients-title">
+    1包にエクソソーム粒子1,500億個——<br><span class="heading-highlight">5つの厳選成分が粘膜を多角的にサポート</span>
+  </div>
+
+  <figure class="ingredients-visual">
+    <img src="assets/uploads/ingredients-visual.png" alt="厳選5つの美容成分。ドラゴンフルーツ由来エクソソーム、低分子ヒアルロン酸、ツバメの巣、最高峰ローヤルゼリー、コラーゲンペプチドの紹介">
+  </figure>
+
+  <div class="product-visual-heading">
+    これだけの成分が、<br>冷やして食べるとよりおいしい！
+  </div>
+
+  <!-- Product visual -->
+  <div class="product-visual">
+    <video autoplay muted loop playsinline preload="metadata" aria-label="VAMORゼリーの商品イメージ動画">
+      <source src="assets/uploads/product-jelly.webm" type="video/webm">
+    </video>
+  </div>
+
+  <p class="product-desc">
+    ぷるっとしたザクロ風味のゼリーに。毎日続けられなければ意味がないから、形にもこだわりました。
+  </p>
+
+  <div class="cta-block">
+    <a href="https://lp.vamor-japan.com/pages/vamor_006_chat" class="cta-btn">
+      内側から変わりたい方はこちら →
+    </a>
+    <div class="cta-sub">初回限定¥4,990 · 送料無料 · いつでも解約可</div>
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<!-- ============================== -->
+<!-- SECTION 05: EVIDENCE           -->
+<!-- ============================== -->
+<section class="sec-evidence">
+  <div class="section-label">Evidence</div>
+
+  <figure class="evidence-summary">
+    <img src="assets/uploads/evidence-summary.png" alt="VAMORの累計販売本数50万本、医師推奨、高リピートを紹介">
+  </figure>
+
+  <figure class="evidence-visual">
+    <img src="assets/uploads/evidence-visual.png" alt="VAMOR累計販売数50万本突破、宮本亜希子医師もおすすめ、医師推奨の紹介">
+  </figure>
+
+  <h2>実際に使った方の声——<br><span class="heading-highlight">「累計50万本」が証明するリピートの理由</span></h2>
+  <p class="intro-text">どんな成分説明よりも、実際に使った方の声が一番正直です。</p>
+
+  <figure class="reviews-visual">
+    <img src="assets/uploads/reviews-visual.png" alt="VAMOR利用者の声。40代後半会社員、50代主婦、40代前半フリーランスの口コミ">
+  </figure>
+
+  <div class="review-disclaimer">※個人の感想であり、効果を保証するものではありません</div>
+
+  <!-- Lifestyle photo placeholder -->
+  <div class="lifestyle-photo">
+    <video autoplay muted loop playsinline preload="metadata" aria-label="VAMORのライフスタイルシーン動画">
+              <source src="assets/uploads/lifestyle-scene.mp4" type="video/mp4">
+    </video>
+  </div>
+
+  <p class="evidence-closing">
+    続けた方ほど、変化を実感——<span class="heading-highlight">VAMORが選ばれ続ける理由。</span><br><br>
+    粘膜ケアは、細胞レベルで働くもの。だから続けるうちに「気づいたら変わっていた」という声が多く届いています。医師も推奨し、累計50万本を突破。3箱セットでまとめ買いをするリピーターが多いのも、続けることの価値を実感している方が多い証拠です。
+  </p>
+</section>
+
+<div class="divider"></div>
+
+<!-- ============================== -->
+<!-- SECTION 06: OFFER              -->
+<!-- ============================== -->
+<section class="sec-offer">
+  <div class="section-label">Offer</div>
+  <h2>「試してみたい」と思ったあなたへ——<br><span class="heading-highlight">今だけのスペシャルオファー</span></h2>
+  <p class="offer-intro">
+    粘膜ケアは、続けることで本来の力を発揮します。「まず体感してほしい」という想いから、定期初回限定の特別価格をご用意しました。
+  </p>
+
+  <figure class="offer-visual">
+    <img src="assets/uploads/offer-visual.png" alt="VAMOR定期初回限定4,990円。通常価格16,880円から約70パーセントオフ、送料無料、いつでも解約可能">
+  </figure>
+
+  <!-- Unboxing photo placeholder -->
+  <div class="quality-section">
+    <h3>体に入れるものだから、<br>品質にもとことんこだわっています</h3>
+  </div>
+
+  <div class="unbox-photo">
+    <img src="assets/uploads/quality-visual.png" alt="研究、品質管理、GMP認定工場での生産を示す品質へのこだわり">
+  </div>
+
+  <div class="quality-section">
+    <p>
+      植物由来エクソソーム、室町ケミカル製の最高峰ローヤルゼリー、吸収にこだわった低分子ヒアルロン酸とコラーゲンペプチド——原材料の選定には一切妥協していません。初回到着後からいつでも解約できますので、まずは一度、体で感じてみてください。
+    </p>
+  </div>
+
+  <div class="cta-block">
+    <a href="https://lp.vamor-japan.com/pages/vamor_006_chat" class="cta-btn">
+      内側から変わりたい方はこちら →
+    </a>
+    <div class="cta-sub">初回限定¥4,990 · 送料無料 · いつでも解約可</div>
+  </div>
+</section>
+
+<!-- ============================== -->
+<!-- SECTION 07: CLOSING / CTA      -->
+<!-- ============================== -->
+<section class="sec-closing">
+  <!-- Closing mood video placeholder -->
+  <div class="closing-video">
+    <video autoplay muted loop playsinline preload="metadata" aria-label="VAMORクロージングムード動画">
+      <source src="assets/uploads/closing-mood.webm" type="video/webm">
+    </video>
+  </div>
+
+  <div class="closing-content">
+    <h2><span class="heading-highlight">外側からケアしてきた自分に、そろそろ内側からのご褒美を</span></h2>
+    <p class="body-text">
+      何年もスキンケアを続けてきた。水をたくさん飲んだ。サプリも試した。それでも変わらなかったのは、あなたのせいじゃありませんでした。ただ、<span class="em">粘膜へのアプローチが、ひとつ足りていなかっただけ</span>。<br><br>
+      あとはVAMORを毎日ひとつ、おいしく食べるだけでいいんです。
+    </p>
+  </div>
+
+  <div class="final-cta">
+    <a href="https://lp.vamor-japan.com/pages/vamor_006_chat" class="cta-btn-final" aria-label="まずは初回限定でお試しする">
+      <img src="assets/uploads/final-cta.png" alt="まずは初回限定でお試しする。初回限定4,990円、送料無料、いつでも解約可能">
+    </a>
+  </div>
+</section>
+
+<!-- ============================== -->
+<!-- FAQ                            -->
+<!-- ============================== -->
+<section class="sec-faq">
+  <h3>よくあるご質問</h3>
+
+  <details class="faq-item">
+    <summary>Q. 定期購入の縛りはありますか？</summary>
+    <div class="faq-answer">
+      初回商品の到着後から、いつでも解約いただけます。次回発送予定日の10日前までにお問い合わせフォームよりご連絡ください。
+    </div>
+  </details>
+
+  <details class="faq-item">
+    <summary>Q. いつ食べればいいですか？</summary>
+    <div class="faq-answer">
+      1日1本を目安に、食べるタイミングはいつでもOKです。冷やしていただくとよりおいしくお召し上がりいただけます。
+    </div>
+  </details>
+
+  <details class="faq-item">
+    <summary>Q. アレルギーが心配です。</summary>
+    <div class="faq-answer">
+      原材料にゼラチン（コラーゲンペプチド由来）・ローヤルゼリーを含みます。アレルギーをお持ちの方は、かかりつけ医にご相談の上お試しください。
+    </div>
+  </details>
+</section>
+
+<!-- Bottom CTA -->
+<section class="sec-bottom-cta">
+  <a href="https://lp.vamor-japan.com/pages/vamor_006_chat" class="cta-btn">
+    内側から変わりたい方はこちら →
+  </a>
+  <div class="cta-sub">初回限定¥4,990・送料無料・いつでも解約可能</div>
+</section>
+
+<!-- Floating CTA bar -->
+<div class="floating-cta" id="floatingCta">
+  <a href="https://lp.vamor-japan.com/pages/vamor_006_chat" class="cta-btn-float" aria-label="初回限定4,990円で試してみる">
+    <img src="assets/uploads/floating-cta.png" alt="初回限定4,990円で試してみる。送料無料、いつでも解約可能">
+  </a>
+</div>
+
+<script>
+// Show the floating CTA between the product introduction and the final CTA.
+const floatingCta = document.getElementById('floatingCta');
+const productVideo = document.querySelector('.product-video');
+const finalCta = document.querySelector('.final-cta');
+
+function checkScroll() {
+  const productIsVisible = productVideo.getBoundingClientRect().top <= window.innerHeight;
+  const finalCtaIsVisible = finalCta.getBoundingClientRect().top <= window.innerHeight;
+
+  if (productIsVisible && !finalCtaIsVisible) {
+    floatingCta.style.display = 'block';
+  } else {
+    floatingCta.style.display = 'none';
+  }
+}
+
+window.addEventListener('scroll', checkScroll, { passive: true });
+window.addEventListener('resize', checkScroll);
+checkScroll();
+</script>
+
+</body>
+</html>
