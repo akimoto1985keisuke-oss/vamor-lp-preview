@@ -37,8 +37,8 @@ body {
   max-width: 420px;
   margin: 0 auto;
   -webkit-font-smoothing: antialiased;
-  line-height: 1.8;
-  font-size: 15px;
+  line-height: 1.85;
+  font-size: 16.5px;
   overflow-x: hidden;
 }
 
@@ -168,8 +168,8 @@ body {
 }
 
 .sec-headline .lead-text {
-  font-size: 15px;
-  line-height: 2;
+  font-size: 16.5px;
+  line-height: 2.05;
   color: var(--charcoal-light);
   margin-bottom: 28px;
 }
@@ -195,7 +195,7 @@ body {
   display: flex;
   align-items: flex-start;
   gap: 12px;
-  padding: 10px 0;
+  padding: 12px 0;
   border-bottom: 1px solid rgba(232,224,212,0.6);
   font-size: 14px;
   line-height: 1.7;
@@ -237,7 +237,7 @@ body {
 }
 
 .sec-headline .cta-text {
-  font-size: 14px;
+  font-size: 16px;
   color: var(--wine);
   font-weight: 500;
   line-height: 1.8;
@@ -265,9 +265,36 @@ body {
   box-decoration-break: clone;
 }
 
+.copy-strong {
+  font-weight: 700;
+  color: var(--charcoal);
+}
+
+.copy-red {
+  font-weight: 700;
+  color: var(--wine);
+}
+
+.copy-marker {
+  font-weight: 700;
+  background: linear-gradient(to bottom, transparent 58%, rgba(248, 220, 167, 0.72) 0);
+  -webkit-box-decoration-break: clone;
+  box-decoration-break: clone;
+}
+
+.copy-large {
+  display: block;
+  font-family: var(--font-serif);
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 1.75;
+  color: var(--wine-dark);
+  margin: 8px 0;
+}
+
 .sec-problem h2 {
   font-family: var(--font-serif);
-  font-size: 19px;
+  font-size: 21px;
   font-weight: 600;
   line-height: 1.7;
   color: var(--charcoal);
@@ -275,8 +302,8 @@ body {
 }
 
 .sec-problem .sub-text {
-  font-size: 15px;
-  line-height: 2;
+  font-size: 16.5px;
+  line-height: 2.05;
   color: var(--charcoal-light);
   margin-bottom: 36px;
 }
@@ -285,7 +312,7 @@ body {
 .mucosa-map {
   background: transparent;
   border-radius: 0;
-  padding: 0;
+  padding: 10px 0;
   margin-bottom: 36px;
   text-align: center;
 }
@@ -315,7 +342,7 @@ body {
 
 .hormone-section h3 {
   font-family: var(--font-serif);
-  font-size: 17px;
+  font-size: 19px;
   font-weight: 600;
   line-height: 1.7;
   color: var(--charcoal);
@@ -323,18 +350,19 @@ body {
 }
 
 .hormone-section .desc {
-  font-size: 14px;
-  line-height: 1.9;
+  font-size: 16px;
+  line-height: 2;
   color: var(--charcoal-light);
   margin-bottom: 28px;
 }
 
 .hormone-graph {
   background: var(--white);
-  border: 1px solid var(--gray-border);
-  border-radius: 12px;
-  padding: 24px 16px 16px;
+  border: 2px solid rgba(236, 135, 164, 0.72);
+  border-radius: 18px;
+  padding: 12px 0;
   margin-bottom: 24px;
+  overflow: hidden;
 }
 
 .hormone-graph .graph-label {
@@ -361,8 +389,8 @@ body {
 }
 
 .problem-closing {
-  font-size: 15px;
-  line-height: 2;
+  font-size: 16.5px;
+  line-height: 2.05;
   color: var(--charcoal-light);
   margin-top: 28px;
   padding: 20px;
@@ -379,7 +407,7 @@ body {
 
 .sec-agitation h2 {
   font-family: var(--font-serif);
-  font-size: 19px;
+  font-size: 21px;
   font-weight: 600;
   line-height: 1.7;
   color: var(--charcoal);
@@ -387,8 +415,8 @@ body {
 }
 
 .sec-agitation .body-text {
-  font-size: 15px;
-  line-height: 2;
+  font-size: 16.5px;
+  line-height: 2.05;
   color: var(--charcoal-light);
   margin-bottom: 28px;
 }
@@ -432,7 +460,7 @@ body {
 
 .accent-box h3 {
   font-family: var(--font-serif);
-  font-size: 16px;
+  font-size: 18px;
   font-weight: 600;
   color: var(--wine-dark);
   line-height: 1.6;
@@ -440,8 +468,8 @@ body {
 }
 
 .accent-box p {
-  font-size: 14px;
-  line-height: 1.9;
+  font-size: 16px;
+  line-height: 2;
   color: var(--charcoal-light);
 }
 
@@ -453,7 +481,7 @@ body {
 
 .sec-solution h2 {
   font-family: var(--font-serif);
-  font-size: 19px;
+  font-size: 21px;
   font-weight: 600;
   line-height: 1.7;
   color: var(--charcoal);
@@ -461,8 +489,8 @@ body {
 }
 
 .sec-solution .body-text {
-  font-size: 15px;
-  line-height: 2;
+  font-size: 16.5px;
+  line-height: 2.05;
   color: var(--charcoal-light);
   margin-bottom: 28px;
 }
@@ -559,7 +587,7 @@ body {
 /* Ingredients */
 .ingredients-title {
   font-family: var(--font-serif);
-  font-size: 16px;
+  font-size: 18px;
   font-weight: 600;
   color: var(--charcoal);
   line-height: 1.7;
@@ -634,7 +662,7 @@ body {
 
 .product-visual-heading {
   font-family: var(--font-serif);
-  font-size: 17px;
+  font-size: 19px;
   font-weight: 600;
   line-height: 1.7;
   text-align: center;
@@ -674,8 +702,8 @@ body {
 }
 
 .product-desc {
-  font-size: 15px;
-  line-height: 2;
+  font-size: 16.5px;
+  line-height: 2.05;
   color: var(--charcoal-light);
   margin-bottom: 32px;
 }
@@ -751,11 +779,11 @@ body {
 }
 
 .evidence-visual {
-  margin: 0 0 36px;
+  margin: 0 -24px 36px;
 }
 
 .evidence-summary {
-  margin: 0 0 18px;
+  margin: 0 -24px 18px;
 }
 
 .evidence-summary img {
@@ -772,7 +800,7 @@ body {
 
 .sec-evidence h2 {
   font-family: var(--font-serif);
-  font-size: 18px;
+  font-size: 21px;
   font-weight: 600;
   line-height: 1.7;
   color: var(--charcoal);
@@ -780,10 +808,14 @@ body {
 }
 
 .sec-evidence .intro-text {
-  font-size: 14px;
+  font-size: 16.5px;
   color: var(--charcoal-light);
-  margin-bottom: 24px;
-  line-height: 1.8;
+  margin-bottom: 12px;
+  line-height: 2;
+}
+
+.sec-evidence .intro-text .copy-large {
+  margin-bottom: 0;
 }
 
 .review-card {
@@ -813,7 +845,7 @@ body {
 }
 
 .reviews-visual {
-  margin: 0 0 10px;
+  margin: -22px -24px 6px;
 }
 
 .reviews-visual img {
@@ -823,9 +855,10 @@ body {
 }
 
 .review-disclaimer {
-  font-size: 11px;
+  font-size: 12px;
+  line-height: 1.55;
   color: var(--gray-text);
-  text-align: center;
+  text-align: left;
   margin-top: 0;
   margin-bottom: 38px;
 }
@@ -863,8 +896,8 @@ body {
 }
 
 .evidence-closing {
-  font-size: 15px;
-  line-height: 2;
+  font-size: 16.5px;
+  line-height: 2.05;
   color: var(--charcoal-light);
 }
 
@@ -876,7 +909,7 @@ body {
 
 .sec-offer h2 {
   font-family: var(--font-serif);
-  font-size: 18px;
+  font-size: 21px;
   font-weight: 600;
   line-height: 1.7;
   color: var(--charcoal);
@@ -884,14 +917,14 @@ body {
 }
 
 .sec-offer .offer-intro {
-  font-size: 14px;
-  line-height: 1.9;
+  font-size: 16.5px;
+  line-height: 2;
   color: var(--charcoal-light);
   margin-bottom: 28px;
 }
 
 .offer-visual {
-  margin: 0 0 28px;
+  margin: 0 -24px 28px;
 }
 
 .offer-visual img {
@@ -1025,7 +1058,7 @@ body {
 
 .quality-section h3 {
   font-family: var(--font-serif);
-  font-size: 15px;
+  font-size: 20px;
   font-weight: 600;
   color: var(--charcoal);
   margin-bottom: 16px;
@@ -1033,8 +1066,8 @@ body {
 }
 
 .quality-section p {
-  font-size: 14px;
-  line-height: 1.9;
+  font-size: 16.5px;
+  line-height: 2.05;
   color: var(--charcoal-light);
   margin-bottom: 28px;
 }
@@ -1066,12 +1099,12 @@ body {
 
 .closing-content {
   background: linear-gradient(180deg, var(--ivory) 0%, var(--wine-bg) 100%);
-  padding: 36px 24px 32px;
+  padding: 36px 24px 16px;
 }
 
 .closing-content h2 {
   font-family: var(--font-serif);
-  font-size: 20px;
+  font-size: 22px;
   font-weight: 600;
   line-height: 1.7;
   color: var(--charcoal);
@@ -1079,10 +1112,10 @@ body {
 }
 
 .closing-content .body-text {
-  font-size: 15px;
-  line-height: 2;
+  font-size: 16.5px;
+  line-height: 2.05;
   color: var(--charcoal-light);
-  margin-bottom: 28px;
+  margin-bottom: 0;
 }
 
 .closing-content .body-text .em {
@@ -1116,7 +1149,7 @@ body {
 
 .sec-faq h3 {
   font-family: var(--font-serif);
-  font-size: 16px;
+  font-size: 18px;
   font-weight: 600;
   color: var(--charcoal);
   margin-bottom: 20px;
@@ -1133,7 +1166,7 @@ body {
 
 .faq-item summary {
   padding: 16px 20px;
-  font-size: 14px;
+  font-size: 16px;
   font-weight: 500;
   color: var(--charcoal);
   cursor: pointer;
@@ -1161,8 +1194,8 @@ body {
 
 .faq-item .faq-answer {
   padding: 0 20px 16px;
-  font-size: 13px;
-  line-height: 1.8;
+  font-size: 15.5px;
+  line-height: 1.95;
   color: var(--charcoal-light);
 }
 
@@ -1231,8 +1264,8 @@ body {
 
   <div class="headline-content">
     <p class="lead-text">
-      毎日化粧水をつけて、美容液を重ねて、それでも追いつかない感覚——あなたにも、ありませんか？<br><br>
-      肌だけじゃない。朝起きたときの口の渇き、夕方になると気になる目のゴロゴロ感、そしてデリケートゾーンの違和感。若い頃にはなかったことが、40代を境に一気に押し寄せてくる。
+      毎日化粧水をつけて、美容液を重ねて、<span class="copy-marker">それでも追いつかない感覚</span>——あなたにも、ありませんか？<br><br>
+      肌だけじゃない。朝起きたときの<span class="copy-red">口の渇き</span>、夕方になると気になる<span class="copy-red">目のゴロゴロ感</span>、そして<span class="copy-red">デリケートゾーンの違和感</span>。若い頃にはなかったことが、<span class="copy-strong">40代を境に一気に押し寄せてくる。</span>
     </p>
 
     <figure class="checklist-image">
@@ -1240,7 +1273,7 @@ body {
     </figure>
 
     <p class="cta-text">
-      3つ以上当てはまったなら、この先を読んでみてください。あなたが長年感じてきた「なんとなく追いつかない感覚」の正体が、わかるかもしれません。
+      <span class="copy-large">3つ以上当てはまったなら、</span>この先を読んでみてください。あなたが長年感じてきた<span class="copy-marker">「なんとなく追いつかない感覚」の正体</span>が、わかるかもしれません。
     </p>
   </div>
 </section>
@@ -1252,7 +1285,7 @@ body {
   <div class="section-label">Problem</div>
   <h2>「ちゃんとケアしてるのに、なんで？」——<br><span class="heading-highlight">40代から急に増える "乾燥の種類"</span></h2>
   <p class="sub-text">
-    スキンケアをさぼっているわけじゃない。むしろ、年齢を重ねるにつれてケアを増やしてきた。それなのに、なんだか追いつかない感覚——そこには、理由があります。
+    スキンケアをさぼっているわけじゃない。むしろ、年齢を重ねるにつれて<span class="copy-marker">ケアを増やしてきた。</span>それなのに、なんだか<span class="copy-red">追いつかない感覚</span>——そこには、理由があります。
   </p>
 
   <!-- Concern visual -->
@@ -1264,7 +1297,7 @@ body {
   <div class="hormone-section">
     <h3><span class="heading-highlight">40代で女性ホルモンが急激に低下すると、何が起きるのか</span></h3>
     <p class="desc">
-      40代を境に、女性ホルモンは急激に低下します。その影響は、肌だけにとどまりません。目・口・デリケートゾーンなど、全身の「粘膜」の潤いを維持する機能も、ホルモンバランスの変化とともに低下していく。
+      40代を境に、<span class="copy-red">女性ホルモンは急激に低下</span>します。その影響は、肌だけにとどまりません。<span class="copy-marker">目・口・デリケートゾーン</span>など、全身の「粘膜」の潤いを維持する機能も、ホルモンバランスの変化とともに低下していく。
     </p>
 
     <!-- Hormone Graph -->
@@ -1274,7 +1307,7 @@ body {
   </div>
 
   <div class="problem-closing">
-    一つひとつの不調をバラバラに対処しても変わらなかったのは、あなたのケアが足りなかったからではありません。ただ、根っこへのアプローチが、まだできていなかっただけなんです。
+    一つひとつの不調をバラバラに対処しても変わらなかったのは、あなたのケアが足りなかったからではありません。ただ、<span class="copy-red">根っこへのアプローチ</span>が、まだできていなかっただけなんです。
   </div>
 </section>
 
@@ -1287,7 +1320,7 @@ body {
   <div class="section-label">Agitation</div>
   <h2>「粘膜に美容液は届かない」——<br><span class="heading-highlight">外側ケアだけでは埋められない理由</span></h2>
   <p class="body-text">
-    これまでのスキンケアは、間違っていませんでした。ただ、一つだけ足りていないことがあります。
+    これまでのスキンケアは、間違っていませんでした。ただ、<span class="copy-large">一つだけ足りていないことがあります。</span>
   </p>
 
   <!-- Skin cross-section diagram -->
@@ -1298,7 +1331,7 @@ body {
   <div class="accent-box">
     <h3>「水もサプリも試した」——<br>変わらなかったのは"届け方"の問題だった</h3>
     <p>
-      問題は、「何を摂るか」だけではなく、「どんな形で、どう届けるか」でもあったんです。では、粘膜まで届く内側ケアとは何か——次に、その答えをお伝えします。
+      問題は、<span class="copy-marker">「何を摂るか」だけではなく、</span><span class="copy-red">「どんな形で、どう届けるか」</span>でもあったんです。では、粘膜まで届く内側ケアとは何か——次に、その答えをお伝えします。
     </p>
   </div>
 </section>
@@ -1312,25 +1345,25 @@ body {
   <div class="section-label">Solution</div>
   <h2>粘膜ケアの新常識——<br><span class="heading-highlight">「食べるエクソソーム」という選択肢</span></h2>
   <p class="body-text">
-    近年、美容と医療の分野で注目されている成分があります。それが「エクソソーム」です。細胞が分泌する極小のカプセルのようなもので、別の細胞に情報を届ける、細胞間のメッセンジャーです。
+    近年、美容と医療の分野で注目されている成分があります。それが<span class="copy-red">「エクソソーム」</span>です。細胞が分泌する極小のカプセルのようなもので、別の細胞に情報を届ける、<span class="copy-marker">細胞間のメッセンジャー</span>です。
   </p>
 
   <!-- Exosome mechanism diagram -->
   <div class="exosome-diagram">
-    <video autoplay muted loop playsinline preload="metadata" aria-label="エクソソームが細胞間で情報を届けるイメージ動画">
-      <source src="assets/uploads/exosome-message.webm" type="video/webm">
+    <video data-lazy-video autoplay muted loop playsinline preload="none" aria-label="エクソソームが細胞間で情報を届けるイメージ動画">
+      <source data-src="assets/uploads/exosome-message.webm" type="video/webm">
     </video>
   </div>
 
   <p class="body-text">
-    このエクソソームが特に豊富に含まれているのが、鮮やかな赤色のレッドドラゴンフルーツ。わずか1mLの中に300億個ものエクソソーム粒子が含まれています。<br><br>
-    これを内側から毎日摂ることができたら——そのコンセプトを形にしたのが、<strong>VAMOR. Moisten Exosome</strong> です。
+    このエクソソームが特に豊富に含まれているのが、鮮やかな赤色の<span class="copy-red">レッドドラゴンフルーツ。</span><span class="copy-marker">わずか1mLの中に300億個</span>ものエクソソーム粒子が含まれています。<br><br>
+    これを<span class="copy-strong">内側から毎日摂る</span>ことができたら——そのコンセプトを形にしたのが、<strong>VAMOR. Moisten Exosome</strong> です。
   </p>
 
   <!-- Product video placeholder -->
   <div class="product-video">
-    <video autoplay muted loop playsinline preload="metadata" aria-label="VAMOR商品の紹介動画">
-      <source src="assets/uploads/product-movie.mp4" type="video/mp4">
+    <video data-lazy-video autoplay muted loop playsinline preload="none" aria-label="VAMOR商品の紹介動画">
+      <source data-src="assets/uploads/product-movie.mp4" type="video/mp4">
     </video>
   </div>
 
@@ -1349,13 +1382,13 @@ body {
 
   <!-- Product visual -->
   <div class="product-visual">
-    <video autoplay muted loop playsinline preload="metadata" aria-label="VAMORゼリーの商品イメージ動画">
-      <source src="assets/uploads/product-jelly.webm" type="video/webm">
+    <video data-lazy-video autoplay muted loop playsinline preload="none" aria-label="VAMORゼリーの商品イメージ動画">
+      <source data-src="assets/uploads/product-jelly.webm" type="video/webm">
     </video>
   </div>
 
   <p class="product-desc">
-    ぷるっとしたザクロ風味のゼリーに。毎日続けられなければ意味がないから、形にもこだわりました。
+    ぷるっとした<span class="copy-red">ザクロ風味のゼリー</span>に。毎日続けられなければ意味がないから、<span class="copy-marker">形にもこだわりました。</span>
   </p>
 
   <div class="cta-block">
@@ -1383,24 +1416,24 @@ body {
   </figure>
 
   <h2>実際に使った方の声——<br><span class="heading-highlight">「累計50万本」が証明するリピートの理由</span></h2>
-  <p class="intro-text">どんな成分説明よりも、実際に使った方の声が一番正直です。</p>
+  <p class="intro-text">どんな成分説明よりも、<span class="copy-large">実際に使った方の声が一番正直です。</span></p>
 
   <figure class="reviews-visual">
     <img src="assets/uploads/reviews-visual.png" alt="VAMOR利用者の声。40代後半会社員、50代主婦、40代前半フリーランスの口コミ">
   </figure>
 
-  <div class="review-disclaimer">※個人の感想であり、効果を保証するものではありません</div>
+  <div class="review-disclaimer">※好評のお声を中心に、事業者が選定・編集して掲載しています。<br>※個人の感想であり、効果を保証するものではありません。</div>
 
   <!-- Lifestyle photo placeholder -->
   <div class="lifestyle-photo">
-    <video autoplay muted loop playsinline preload="metadata" aria-label="VAMORのライフスタイルシーン動画">
-              <source src="assets/uploads/lifestyle-scene.mp4" type="video/mp4">
+    <video data-lazy-video autoplay muted loop playsinline preload="none" aria-label="VAMORのライフスタイルシーン動画">
+              <source data-src="assets/uploads/lifestyle-scene.mp4" type="video/mp4">
     </video>
   </div>
 
   <p class="evidence-closing">
     続けた方ほど、変化を実感——<span class="heading-highlight">VAMORが選ばれ続ける理由。</span><br><br>
-    粘膜ケアは、細胞レベルで働くもの。だから続けるうちに「気づいたら変わっていた」という声が多く届いています。医師も推奨し、累計50万本を突破。3箱セットでまとめ買いをするリピーターが多いのも、続けることの価値を実感している方が多い証拠です。
+    粘膜ケアは、<span class="copy-marker">細胞レベルで働くもの。</span>だから続けるうちに<span class="copy-red">「気づいたら変わっていた」</span>という声が多く届いています。医師も推奨し、累計50万本を突破。3箱セットでまとめ買いをするリピーターが多いのも、<span class="copy-strong">続けることの価値を実感している方が多い証拠</span>です。
   </p>
 </section>
 
@@ -1413,7 +1446,7 @@ body {
   <div class="section-label">Offer</div>
   <h2>「試してみたい」と思ったあなたへ——<br><span class="heading-highlight">今だけのスペシャルオファー</span></h2>
   <p class="offer-intro">
-    粘膜ケアは、続けることで本来の力を発揮します。「まず体感してほしい」という想いから、定期初回限定の特別価格をご用意しました。
+    粘膜ケアは、<span class="copy-marker">続けることで本来の力を発揮</span>します。「まず体感してほしい」という想いから、<span class="copy-red">定期初回限定の特別価格</span>をご用意しました。
   </p>
 
   <figure class="offer-visual">
@@ -1431,7 +1464,7 @@ body {
 
   <div class="quality-section">
     <p>
-      植物由来エクソソーム、室町ケミカル製の最高峰ローヤルゼリー、吸収にこだわった低分子ヒアルロン酸とコラーゲンペプチド——原材料の選定には一切妥協していません。初回到着後からいつでも解約できますので、まずは一度、体で感じてみてください。
+      植物由来エクソソーム、室町ケミカル製の最高峰ローヤルゼリー、吸収にこだわった低分子ヒアルロン酸とコラーゲンペプチド——<span class="copy-red">原材料の選定には一切妥協していません。</span>初回到着後からいつでも解約できますので、まずは一度、<span class="copy-marker">体で感じてみてください。</span>
     </p>
   </div>
 
@@ -1449,16 +1482,16 @@ body {
 <section class="sec-closing">
   <!-- Closing mood video placeholder -->
   <div class="closing-video">
-    <video autoplay muted loop playsinline preload="metadata" aria-label="VAMORクロージングムード動画">
-      <source src="assets/uploads/closing-mood.webm" type="video/webm">
+    <video data-lazy-video autoplay muted loop playsinline preload="none" aria-label="VAMORクロージングムード動画">
+      <source data-src="assets/uploads/closing-mood.webm" type="video/webm">
     </video>
   </div>
 
   <div class="closing-content">
     <h2><span class="heading-highlight">外側からケアしてきた自分に、そろそろ内側からのご褒美を</span></h2>
     <p class="body-text">
-      何年もスキンケアを続けてきた。水をたくさん飲んだ。サプリも試した。それでも変わらなかったのは、あなたのせいじゃありませんでした。ただ、<span class="em">粘膜へのアプローチが、ひとつ足りていなかっただけ</span>。<br><br>
-      あとはVAMORを毎日ひとつ、おいしく食べるだけでいいんです。
+      何年もスキンケアを続けてきた。水をたくさん飲んだ。サプリも試した。それでも変わらなかったのは、<span class="copy-strong">あなたのせいじゃありませんでした。</span>ただ、<span class="em">粘膜へのアプローチが、ひとつ足りていなかっただけ</span>。<br><br>
+      <span class="copy-large">あとはVAMORを毎日ひとつ、</span>おいしく食べるだけでいいんです。
     </p>
   </div>
 
@@ -1513,6 +1546,34 @@ body {
 </div>
 
 <script>
+const lazyVideos = document.querySelectorAll('video[data-lazy-video]');
+
+function loadLazyVideo(video) {
+  if (video.dataset.loaded === 'true') return;
+
+  video.querySelectorAll('source[data-src]').forEach((source) => {
+    source.src = source.dataset.src;
+  });
+  video.dataset.loaded = 'true';
+  video.load();
+  video.play().catch(() => {});
+}
+
+if ('IntersectionObserver' in window) {
+  const videoObserver = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        loadLazyVideo(entry.target);
+        videoObserver.unobserve(entry.target);
+      }
+    });
+  }, { rootMargin: '600px 0px' });
+
+  lazyVideos.forEach((video) => videoObserver.observe(video));
+} else {
+  lazyVideos.forEach(loadLazyVideo);
+}
+
 // Show the floating CTA between the product introduction and the final CTA.
 const floatingCta = document.getElementById('floatingCta');
 const productVideo = document.querySelector('.product-video');
